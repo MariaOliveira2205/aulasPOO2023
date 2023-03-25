@@ -1,0 +1,25 @@
+package aplicacao;
+
+import modelos.Conta;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Conta conta = new Conta();
+		
+		conta.setCliente("Maria");
+		conta.setSaldo(2000);
+		
+		conta.exibeSaldo();
+		
+		conta.Sacar(1000);
+		
+		conta.exibeSaldo();
+		
+		conta.Depositar(2000);
+		
+		conta.exibeSaldo();
+		
+	}
+
+}
