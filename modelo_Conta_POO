@@ -1,0 +1,50 @@
+package modelos;
+
+public class Conta{
+	
+	/* Atributos do objeto */
+	private String cliente;
+	private double saldo;
+	/* ------------ */
+	
+	
+	/* Construtores */
+	public Conta(){
+		
+	}
+	public Conta(String cliente){
+		this.setCliente(cliente);
+	}
+	/* ------------ */
+	
+	
+	/* Funções de Conta */
+	public void exibeSaldo(){
+		System.out.println("Nome: " + getCliente() + "\n" + "Saldo: " + getSaldo());
+	}
+	public void Sacar(double valor) {
+		setSaldo(getSaldo() - valor);
+		System.out.println("\nSaque concluido!\n");
+	}
+	public void Depositar(double valor) {
+		setSaldo(getSaldo() + valor);
+		System.out.println("\nDeposito concluido!");
+	}
+	/* ------------ */
+	
+	
+	/* get e set dos atributos */
+	public String getCliente() {
+		return cliente;
+	}
+	public void setCliente(String cliente) {
+		this.cliente = cliente;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	/* ------------ */
+}
